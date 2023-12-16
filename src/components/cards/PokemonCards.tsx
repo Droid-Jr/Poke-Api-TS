@@ -25,15 +25,14 @@ function PokemonCards({ pokemons }: CardsPorps) {
       className={`poke-card border-${pokemons?.types[0].type.name}`}>
       <header className={`poke-card__header bg-${pokemons?.types[0].type.name}`}>
         <Image
-        width={300}
-        height={200}
+        width={800} height={800}
           className="poke-card__sprite"
           src={pokemons?.sprites.other["official-artwork"].front_default}
-          alt=""
+          alt={pokemons?.name}
         />
       </header>
       <section className="poke-card__body">
-        <h3 className={`poke-card__name  color-${pokemons?.types[0].type.name}`}>
+        <h3  className={`poke-card__name  color-${pokemons?.types[0].type.name}`}>
           {pokemons?.name}
         </h3>
         <ul className="poke-card__types-container">

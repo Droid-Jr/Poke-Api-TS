@@ -50,7 +50,7 @@ function Page() {
         changeOp={changeOption}
         option={option}
       />
-      <section className="w-[90%] py-5 m-auto flex flex-wrap justify-center gap-5">
+      <section className="w-[90%] py-5 m-auto  flex flex-wrap justify-center gap-5">
         {loading ? (
           <Loader />
         ) : (
